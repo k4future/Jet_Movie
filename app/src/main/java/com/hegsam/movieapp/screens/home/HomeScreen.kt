@@ -21,9 +21,10 @@ import com.hegsam.movieapp.widgets.MovieRow
 fun HomeScreen(navController: NavController) {
 
     Scaffold(topBar = {
-        TopAppBar(backgroundColor = Color.Transparent, elevation = 0.dp) {
-            Text(text = "Movies")
-        }
+        TopAppBar(
+            backgroundColor = Color.Transparent,
+            elevation = 0.dp,
+            title = { Text(text = "Movies") })
     }) {
         MainContent(navController = navController)
     }
